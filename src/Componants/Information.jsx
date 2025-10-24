@@ -5,6 +5,7 @@ import img1 from "../assets/ad36caef1299db880b609c3c52f4dca032775936.png";
 import img2 from "../assets/81a1006bfc765638bdec2064ed3904f9a2469c7a.png";
 import img3 from "../assets/Weather Icon.png";
 import img4 from "../assets/WeatherIcon.png";
+import down from "../assets/Units Dropdown Icon.png";
 export const Informaition = () => {
   let data = [
     { day: "tue", img: img1, mc: "20°", mc2: "14°" },
@@ -14,6 +15,16 @@ export const Informaition = () => {
     { day: "Sat", img: img1, mc: "21°", mc2: "15°" },
     { day: "Sun", img: img1, mc: "25°", mc2: "16°" },
     { day: "Mon", img: img1, mc: "24°", mc2: "15°" },
+  ];
+  let dataR = [
+    { img: img1, mc: "3 PM", mc2: "14°" },
+    { img: img2, mc: "4 PM", mc2: "15°" },
+    { img: img3, mc: "5 PM", mc2: "14°" },
+    { img: img4, mc: "6 PM", mc2: "13°" },
+    { img: img1, mc: "7 PM", mc2: "15°" },
+    { img: img1, mc: "8 PM", mc2: "16°" },
+    { img: img1, mc: "9 PM", mc2: "15°" },
+    { img: img1, mc: "10 PM", mc2: "15°" },
   ];
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10  ">
@@ -73,7 +84,27 @@ export const Informaition = () => {
         </div>
       </div>
 
-      <div className="h-[586px] bg-amber-50"></div>
+      <div className="flex flex-col gap-4 p-5 bg-[#262540] rounded-2xl">
+        <div className="  flex  justify-between items-center">
+          <h2>Hourly forecast</h2>
+          <p className="flex gap-5 items-center py-2.5 px-4 bg-[#3C3B5E] rounded-md">
+            Tuesday <img src={down} alt="" />
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4 ">
+          {dataR.map((el, index) => (
+            <div key={index} className="flex justify-between items-center bg-[#302F4A] border border-gray-700 rounded-md px-5">
+              <div className="flex gap-4 items-center">
+                <img src={el.img} alt={el.day} className="w-12 h-12" />
+                <p>{el.mc}</p>
+              </div>
+
+              <p>{el.mc2}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

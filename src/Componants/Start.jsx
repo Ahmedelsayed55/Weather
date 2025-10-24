@@ -2,7 +2,7 @@ import React from "react";
 import search from "../assets/Search Icon.png";
 export const Start = () => {
   return (
-    <div className="py-5 flex flex-col gap-10 items-center ">
+    <div className="py-10 flex flex-col gap-10 items-center lg:ml-15 ">
       <h1 className=" text-6xl font-header text-center">
         How’s the sky looking today?
       </h1>

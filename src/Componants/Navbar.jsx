@@ -12,7 +12,7 @@ export const Navbar = () => {
             </div>
         </div>
         <div>
-            <button className='bg-[#262540] rounded-md py-2 px-4 text-white flex gap-2 items-center cursor-pointer'><img src={setting} alt="" /> Unit <img src={down} alt="" /></button>
+            <button className='bg-[#262540] rounded-md py-2 px-4 text-white flex gap-3 items-center cursor-pointer'><img src={setting} alt="" /> Unit <img src={down} alt="" /></button>
         </div>
     </div>
   )
