@@ -8,9 +8,10 @@ export const Navbar = () => {
   return (
     <motion.div
       className="flex justify-between items-center py-5"
-      initial={{ y: -50, opacity: 0 }}       // البداية (فوق وشبه شفاف)
-      animate={{ y: 0, opacity: 1 }}         // الحركة (ينزل ويظهر)
-      transition={{ duration: 0.9, ease: "easeOut" }} // السرعة والنعومة
+      initial={{ y: -50, opacity: 0 }}     
+      whileInView={{ y: 0, opacity: 1 }}        
+      transition={{ duration: 0.9, ease: "easeOut" }} 
+        viewport={{ once: false, amount: 0.3 }}
     >
       <div>
         <div className="flex gap-5 items-center">
@@ -20,8 +21,9 @@ export const Navbar = () => {
             alt="logo"
              whileHover={{ scale: 1.05, rotate: -180 }}
             initial={{ rotate: -180, opacity: 0 }}
-            animate={{ rotate: 0, opacity: 1 }}
+            whileInView={{ rotate: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
           />
           <h1 className="text-white lg:text-3xl font-header">Weather Now</h1>
         </div>
