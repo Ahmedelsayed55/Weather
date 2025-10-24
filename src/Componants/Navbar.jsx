@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <div className='flex justify-between items-center py-5'>
         <div>
-            <div className='flex gap-5'>
+            <div className='flex gap-5 items-center'>
                 <img className='w-10 h-10' src={logo} alt="logo" />
                 <h1 className='text-white lg:text-3xl font-header'>Weather Now</h1>
             </div>
