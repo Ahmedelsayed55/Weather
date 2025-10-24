@@ -58,7 +58,7 @@ export const Informaition = () => {
           <motion.div
             initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1, duration: 1.5 }}
+            transition={{ delay: 0.1, duration: 1 }}
             viewport={{ once: false, amount: 0.3 }}
             className="h-[118px] rounded-2xl px-5 bg-[#262540] flex flex-col justify-center gap-5"
           >
