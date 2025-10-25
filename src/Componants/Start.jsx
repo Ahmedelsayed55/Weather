@@ -6,17 +6,14 @@ export const Start = () => {
   return (
     <motion.div
       className="py-10 flex flex-col gap-10 items-center lg:ml-15"
-      initial={{ opacity: 0, y: 50 }}       
-      whileInView ={{ opacity: 1, y: 0 }}          
-      transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }}
+    
     >
    
       <motion.h1
         className="text-6xl font-header text-center"
         initial={{ opacity: 0, y: -30 }}
         whileInView ={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.6 }}
+        transition={{ delay: 0.1, duration: 0.6, type: "spring", stiffness: 400,}}
           viewport={{ once: false, amount: 0.3 }}
       >
         How’s the sky looking today?
@@ -25,9 +22,9 @@ export const Start = () => {
     
       <motion.div
         className="flex justify-between gap-5 w-full lg:w-[656px]"
-        initial={{ opacity: .5, y: -30 }}
+        initial={{ opacity: .5, y: 30 }}
         whileInView ={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
+        transition={{ duration: 0.6, type: "spring", stiffness: 400 }}
           viewport={{ once: false, amount: 0.3 }}
       >
         <div className="relative flex w-full max-w-[526px]">
