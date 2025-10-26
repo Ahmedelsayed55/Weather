@@ -13,7 +13,7 @@ export const Start = () => {
         className="text-6xl font-header text-center"
         initial={{ opacity: 0, y: -30 }}
         whileInView ={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1, duration: 0.6, type: "spring", stiffness: 400,}}
+        transition={{ delay: 0.1, duration: 0.6, }}
           viewport={{ once: false, amount: 0.3 }}
       >
         How’s the sky looking today?
@@ -24,7 +24,7 @@ export const Start = () => {
         className="flex justify-between gap-5 w-full lg:w-[656px]"
         initial={{ opacity: .5, y: 30 }}
         whileInView ={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, type: "spring", stiffness: 400 }}
+        transition={{ duration: 0.6, }}
           viewport={{ once: false, amount: 0.3 }}
       >
         <div className="relative flex w-full max-w-[526px]">

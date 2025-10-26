@@ -34,7 +34,7 @@ export const Informaition = () => {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.1, duration: 1, type: "spring", stiffness: 400, damping: 9  }}
+          transition={{ delay: 0.1, duration: 1,    }}
           viewport={{ once: false, amount: 0.3 }}
           className="h-[286px] mx-auto rounded-2xl grid grid-cols-1 md:grid-cols-3 items-center px-10"
           style={{
@@ -50,10 +50,10 @@ export const Informaition = () => {
           </div>
           <div className=" flex items-center justify-center">
             <motion.img
-               whileHover={{ scale: 1.05, rotate: -180 }}
+               
             initial={{ rotate: -180, opacity: 0 }}
             whileInView={{ rotate: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 1, type: "spring", stiffness: 100, damping: 2}}
+          transition={{ delay: 0.1, duration: 1, }}
           viewport={{ once: false, amount: 0.3 }}
             className="w-1/4" src={sun} alt="" />
             <h2 className="text-8xl italic">20°</h2>
@@ -64,7 +64,7 @@ export const Informaition = () => {
           <motion.div
             initial={{ opacity: 0, x: -70 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.7, duration: 1, type:'spring', stiffness:300 }}
+            transition={{ delay: 0.7, duration: .5,  }}
             viewport={{ once: false, amount: 0.3 }}
             className="h-[118px] rounded-2xl px-5 bg-[#262540] flex flex-col justify-center gap-5"
           >
@@ -74,7 +74,7 @@ export const Informaition = () => {
           <motion.div
             initial={{ opacity: 0, x: -70 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5, duration: 1, type:'spring', stiffness:400 }}
+            transition={{ delay: 0.5, duration: .5, }}
             viewport={{ once: false, amount: 0.3 }}
             className="h-[118px] rounded-2xl px-5 bg-[#262540] flex flex-col justify-center gap-5"
           >
@@ -84,7 +84,7 @@ export const Informaition = () => {
           <motion.div
             initial={{ opacity: 0, x: -70 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3, duration: 0.1, type:'spring', stiffness:400 }}
+            transition={{ delay: 0.3, duration: 0.5,}}
             viewport={{ once: false, amount: 0.3 }}
             className="h-[118px] rounded-2xl px-5 bg-[#262540] flex flex-col justify-center gap-5"
           >
@@ -94,7 +94,7 @@ export const Informaition = () => {
           <motion.div
             initial={{ opacity: 0, x: -70 }}
            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1, duration: 0.1, type:'spring', stiffness:400 }}
+            transition={{ delay: 0.1, duration: 0.5, }}
             viewport={{ once: false, amount: 0.3 }}
             className="h-[118px] rounded-2xl px-5 bg-[#262540] flex flex-col justify-center gap-5"
           >
@@ -106,9 +106,9 @@ export const Informaition = () => {
         <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
           {data.map((el, index) => (
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 , type:'spring', stiffness:700}}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3, duration: 0.6 ,}}
               viewport={{ once: false, amount: 0.3 }}
               key={index}
               className="h-[165px] bg-[#262540] flex flex-col items-center justify-between p-2 rounded-lg"

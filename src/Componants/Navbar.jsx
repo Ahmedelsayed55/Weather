@@ -10,7 +10,7 @@ export const Navbar = () => {
       className="flex justify-between items-center py-5"
       initial={{ y: -50, opacity: 0 }}     
       whileInView={{ y: 0, opacity: 1 }}        
-      transition={{ duration: 0.9, ease: "easeOut", type: "spring", stiffness: 400 }} 
+      transition={{ duration: 0.9, ease: "easeOut",  }} 
         viewport={{ once: false, amount: 0.3 }}
     >
       <div>
@@ -22,7 +22,7 @@ export const Navbar = () => {
              whileHover={{ scale: 1.05, rotate: -180 }}
             initial={{ rotate: -180, opacity: 0 }}
             whileInView={{ rotate: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", type: "spring", stiffness: 400, damping: 2  }}
+            transition={{ duration: 1, ease: "easeOut",  }}
               viewport={{ once: false, amount: 0.3 }}
           />
           <h1 className="text-white lg:text-3xl font-header">Weather Now</h1>
